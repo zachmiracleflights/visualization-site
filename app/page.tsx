@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen text-white flex flex-col justify-center items-center space-y-5">
+    <div className="h-screen w-screen text-white flex flex-col justify-center items-center space-y-5 p-3 text-center">
       <h1 className="font-bold text-5xl">Miracle Flights Visualization Site</h1>
       <p className="text-gray-400 text-lg">Visualize the amazing work Miracle Flights is doing by viewing our Flight Boards. All data is in real time!</p>
       <div className="flex space-x-5 text-xl">
