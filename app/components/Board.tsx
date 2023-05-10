@@ -1,7 +1,7 @@
 import { FaPlaneDeparture, FaPlaneArrival } from "react-icons/fa"
 
 async function getFlights(route: string) {
-    const res = await fetch("https://visualization-backend.onrender.com/" + route, { cache: "no-store" })
+    const res = await fetch("https://visualization-backend-production.up.railway.app/" + route, { cache: "no-store" })
     const data = await res.json()
     return data
 }
