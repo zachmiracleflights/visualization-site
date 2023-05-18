@@ -1,5 +1,7 @@
+import { uid } from "uid"
+
 async function getFlights(route: string) {
-    const res = await fetch("https://visualization-backend-production.up.railway.app/" + route, { next: { revalidate: 60 } })
+    const res = await fetch("https://weary-teal-sheep.cyclic.app/" + route, { next: { revalidate: 60 } })
     const data = await res.json()
     return data
 }
@@ -53,7 +55,7 @@ export default async function Board(props: any) {
                         {
                             flights.map((data: any) => {
                                 return (
-                                    <tr className="text-center">
+                                    <tr className="text-center" key={uid()}>
                                         <td className="py-2">{data.to}</td>
                                         <td className="py-2">{data.from}</td>
                                         <td className="py-2">{data.airline}</td>

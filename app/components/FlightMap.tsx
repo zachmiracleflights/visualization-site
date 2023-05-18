@@ -15,7 +15,7 @@ export default function FlightMap() {
     useEffect(() => {
         const getData = async () => {
             const airports: any = []
-            const departureRes = await fetch('https://visualization-backend-production.up.railway.app/departures')
+            const departureRes = await fetch('https://weary-teal-sheep.cyclic.app/departures')
             const departureData = await departureRes.json()
         
             departureData.forEach((data: any) => {
@@ -24,7 +24,7 @@ export default function FlightMap() {
                 )
             })
         
-            const returnRes = await fetch('https://visualization-backend-production.up.railway.app/departures')
+            const returnRes = await fetch('https://weary-teal-sheep.cyclic.app/returns')
             const returnData = await returnRes.json()
         
             returnData.forEach((data: any) => {
