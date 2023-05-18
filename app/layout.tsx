@@ -13,9 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='bg-[#293E68] text-white'>
-        <main className="w-full flex justify-center">
           {children}
-        </main>
       </body>
     </html>
   )
